@@ -1,0 +1,3 @@
+[submodule "app/htdocs/wp-content/themes/zf-theme"]
+	path = app/htdocs/wp-content/themes/zf-theme
+	url = https://danielck@github.com/ZeelandFamily/zf-theme.git
