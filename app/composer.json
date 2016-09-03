@@ -60,12 +60,9 @@
 
     "seravo/wp-palvelu-plugin": ">=1.0.1",
 
-    "wpackagist-plugin/auto-post-thumbnail": "*",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
-    "wpackagist-plugin/wp-native-dashboard": "*",
 
     "wpackagist-theme/twentysixteen": "*",
-    "wpackagist-theme/twentyfifteen": "*"
   },
   "extra": {
     "installer-paths": {
