@@ -1,5 +1,3 @@
-![WP-palvelu.fi](https://wp-palvelu.fi/wp-content/uploads/2015/01/wp-palvelu-header.jpg)
-
 # Pressmatic template for WP-Palvelu.fi
 
 By ZeelandFamily, based on the WordPress project layout used at Seravo's wp-palvelu.fi. The contents of the app/ directory is essentially a stripped-down and slightly modified version of https://github.com/Seravo/wordpress
