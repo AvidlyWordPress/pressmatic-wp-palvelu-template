@@ -43,7 +43,7 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
   update_option('blogname', $blog_title);
   update_option('admin_email', $user_email);
   update_option('blog_public', $public);
-  update_option('blogdescription',__('Uusi WP-palvelu.fi -sivusto'));
+  update_option('blogdescription',__(''));
 
   $guessurl = wp_guess_url();
 
