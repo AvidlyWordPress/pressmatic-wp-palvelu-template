@@ -34,6 +34,7 @@ define('DB_PASSWORD', getenv('DB_PASSWORD'));
 define('DB_HOST', getenv('DB_HOST') ? getenv('DB_HOST') : 'localhost');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
+
 $table_prefix = getenv('DB_PREFIX') ? getenv('DB_PREFIX') : 'wp_';
 
 /**
@@ -70,7 +71,7 @@ define('NONCE_SALT',       getenv('NONCE_SALT'));
  * SSL ADMIN
  * Allow overriding it in dev environment so we can use phantomjs to test logging in.
  */
-defined('FORCE_SSL_ADMIN') or define('FORCE_SSL_ADMIN', true);
+//defined('FORCE_SSL_ADMIN') or define('FORCE_SSL_ADMIN', true);
 
 /**
  * Use *.wp-palvelu.fi domain as the wp-admin
