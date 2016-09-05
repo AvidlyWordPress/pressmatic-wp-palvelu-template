@@ -62,7 +62,7 @@
 
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
 
-    "wpackagist-theme/twentysixteen": "*",
+    "wpackagist-theme/twentysixteen": "*"
   },
   "extra": {
     "installer-paths": {
