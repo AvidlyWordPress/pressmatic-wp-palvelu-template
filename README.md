@@ -8,6 +8,10 @@ This same project layout is used by default on all [WP-palvelu.fi](https://wp-pa
 
 The reason this repository exists is to make starting a project in Pressmatic easier, when hosting is in wp-palvelu.fi, or any environment where a similar directory structure is used.
 
+## How to use this template
+
+[Download the latest release release ZIP](https://github.com/ZeelandFamily/pressmatic-wp-palvelu-template/releases/latest) and drop it in `~/Library/Application Support/Pressmatic/site-templates`. You should then be able to create a new site in Pressmatic using this template (New Site > Template).
+
 ## Documentation
 
 Please see production environment documentation at https://docs.wp-palvelu.fi for more info.
