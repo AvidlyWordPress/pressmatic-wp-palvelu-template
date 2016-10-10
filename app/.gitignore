@@ -1,49 +1,111 @@
-# WordPress core is installed by Composer
-htdocs/wordpress
-htdocs/.htaccess
+# -----------------------------------------------------------------
+# .gitignore for WordPress (based on original from @salcode)
+#
+# By default all files are ignored.  You'll need to whitelist
+# any mu-plugins, plugins, or themes you want to include in the repo.
+#
+# To ignore uncommitted changes in a file that is already tracked, use
+# git update-index --assume-unchanged
+#
+# To stop tracking a file that is currently tracked, use
+# git rm --cached
+#
+# Change Log:
+#
 
-# WP-CLI database dumps that should not be tracked in git
-db-sync
-sql-dump-*.sql
-
-# Custon environment variables may include passwords and other
-# secrets and should not be tracked in git
-.env
-.env.*
+# ignore everything in the root except the "wp-content" directory.
+/*
+!htdocs
+!tests
+!composer.json
+!composer.lock
 !.env.example
 
-# WordPress content directories usually populated by composer
-# If you create custom plugins, force add it to git so that it's tracked
-# If you create custom themese, they are automatically tracked in git
-htdocs/wp-content/plugins/*
-!htdocs/wp-content/plugins/.gitkeep
+htdocs/*
+!htdocs/wp-content/
+!htdocs/index.php
+!htdocs/wp-config.php
+!htdocs/wp-load.php
+
+# ignore everything in the "wp-content" directory, except:
+# mu-plugins, plugins, and themes directories
+htdocs/wp-content/*
+!htdocs/wp-content/mu-plugins/
+!htdocs/wp-content/plugins/
+!htdocs/wp-content/themes/
+
+# ignore all plugins, and themes
+# unless explicitly whitelisted at the end of this file
+# uncomment the below if you want to ignore all mu-plugins by default
 htdocs/wp-content/mu-plugins/*
-!htdocs/wp-content/mu-plugins/.gitkeep
-!htdocs/wp-content/mu-plugins/register-theme-directory.php
-!htdocs/wp-content/mu-plugins/bedrock-autoloader.php
-htdocs/wp-content/themes/twenty*
-!htdocs/wp-content/themes/.gitkeep
-htdocs/wp-content/languages/*
-!htdocs/wp-content/languages/.gitkeep
+htdocs/wp-content/plugins/*
+htdocs/wp-content/themes/*
 
-# WordPress content directories filled with user data
-# not to be tracked in git
-htdocs/wp-content/upgrade
-htdocs/wp-content/uploads/*
-!htdocs/wp-content/uploads/.gitkeep
+# ignore all files starting with . or ~
+~*
 
-# Server data, not part of project
-htdocs/.well-known
+# ignore node & bower dependency directories (used by grunt/gulp)
+node_modules/
+bower_components/
 
-# Libraries installed by Composer, Bower etc
-vendor/*
-!vendor/.gitkeep
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
 
-# Node Package Manager
-node_modules
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
 
-# Vagrant run-time output, not need to track in git
-bin
-.vagrant
-mkmf.log
-myrecording
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!README.md
+!CHANGELOG.md
+!composer.json
+!package.json
+
+# track favicon files, if they exist
+!android-chrome-*.png
+!apple-touch-icon*.png
+!browserconfig.xml
+!favicon*.png
+!favicon*.ico
+!manifest.json
+!mstile-*.png
+!safari-pinned-tab.svg
+
+# track these mu-plugins, plugins, and themes
+# add your own entries here
+htdocs/wp-content/plugins/zf-*
+htdocs/wp-content/plugins/h1-*
+!htdocs/wp-content/plugins/example-plugin/
+!htdocs/wp-content/themes/example-theme/

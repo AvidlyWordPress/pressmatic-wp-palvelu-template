@@ -3,3 +3,6 @@
 
 # Ignore SQL backup files from repo
 app/sql
+
+# Ignore composer.lock
+composer.lock
