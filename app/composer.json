@@ -60,7 +60,8 @@
 
     "seravo/wp-palvelu-plugin": ">=1.0.1",
 
-    "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/cmb2": "*",
 
     "wpackagist-theme/twentysixteen": "*"
   },

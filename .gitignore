@@ -2,4 +2,4 @@
 *.log
 
 # Ignore SQL backup files from repo
-sql
+app/sql
